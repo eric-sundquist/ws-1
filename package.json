@@ -1,0 +1,24 @@
+{
+  "name": "ws-1",
+  "version": "1.0.0",
+  "description": "Hänga gubbe",
+  "main": "hangman.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eric-sundquist/ws-1.git"
+  },
+  "author": "Eric Sundqvist",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eric-sundquist/ws-1/issues"
+  },
+  "homepage": "https://github.com/eric-sundquist/ws-1#readme",
+  "dependencies": {
+    "node-fetch": "^3.2.10"
+  }
+}
