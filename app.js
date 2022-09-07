@@ -1,4 +1,6 @@
-import fetch from 'node-fetch';
+import fetch from 'node-fetch'
+import * as readline from 'node:readline/promises'
+import { stdin as input, stdout as output } from 'node:process'
 
 // Hämta ord modul...
 const getWord = async () => { 
@@ -30,7 +32,14 @@ const runApp = async () => {
   console.log('Your word is:')
   const uS = await genUnderscores(word)
   console.log(uS);
+
+  const read = readline.createInterface({ input, output });
+  const answer = await read.question('What do you think of Node.js? ');
+  console.log(`Thank you for your valuable feedback: ${answer}`);
+  read.close();
 }
+
+
 
 runApp()
 
