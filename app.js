@@ -55,13 +55,7 @@ const runApp = async () => {
   console.log(underScores)
   play(word, underScores)
 
-  // console.log(`Thank you for your valuable feedback: ${answer}`)
   
 }
 
-
-
 runApp()
-
-
-// 
